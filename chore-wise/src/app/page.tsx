@@ -1,7 +1,6 @@
 import styles from './page.module.css'
 
 export default function Landing() {
-  await new Promise
   return (
     <>
       <main className={styles.main}>
