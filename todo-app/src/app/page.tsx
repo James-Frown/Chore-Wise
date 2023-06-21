@@ -1,9 +1,14 @@
-import styles from './page.module.css'
+import Link from "next/link"
 
-export default function Landing() {
+export const metadata = {
+  title: 'ChoreWise | Landing Page',
+  description: 'Welcome to ChoreWise landing page',
+}
+
+export default function LandingPage() {
   return (
     <>
-      <main className={styles.main}>
+      <main>
         <div>
           <h1>
             Welcome to Chore-Wise
@@ -14,10 +19,14 @@ export default function Landing() {
         </div>
         <div>
           <button>
-            Login
+            <Link href={"/login"}>
+              Login
+            </Link>
           </button>
           <button>
-            signup
+            <Link href={"/signup"}>
+              Get Started
+            </Link>
           </button>
         </div>
       </main>
