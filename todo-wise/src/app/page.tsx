@@ -1,4 +1,5 @@
 import { Alert } from "@/components/bootstrap";
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
@@ -19,7 +20,21 @@ export default function LandingPage() {
             </p>
           </Alert>
         </div>
+        <div>
+          <button>
+            <Link href={"/login"}>
+              Login
+            </Link>
+          </button>
+          <button>
+            <Link
+              href={"/signup"}>
+              SignUp
+            </Link>
+          </button>
+        </div>
       </div>
     </>
   )
 }
+
