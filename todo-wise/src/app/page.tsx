@@ -1,6 +1,11 @@
 import { Alert } from "@/components/bootstrap";
 import Link from "next/link";
 
+export const metadata = {
+  title: 'ChoreWise | Landing',
+  description: 'Landing Page',
+}
+
 export default function LandingPage() {
   return (
     <>
